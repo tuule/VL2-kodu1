@@ -63,58 +63,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-footer {
-    width: calc(100% - 80px);
-    padding: 40px 40px;
-    background-color: #172029;
-    margin-top: 20px;
-    overflow: hidden;
-}
-
-.disclaimer {
-    display: none;
-}
-
-footer ul {
-    width: fit-content;
-    float: left;
-    padding-left: 0px;
-}
-
-footer ul li {
-    display: block;
-    padding: 0 0 10px 0;
-}
-
-footer ul li p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-footer ul li a {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 3px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.footer-sm {
-    width: 32px;
-    float: right;
-}
-
-.footer-sm img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
 hr {
     color: #4f5663;
     border-width: 2px;
@@ -174,10 +122,70 @@ hr {
     transform: translate(-50%, -50%);
 }
 
-/*arvutiversioon*/
+/* jalus */
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #172029;
+    margin-top: 20px;
+    overflow: hidden;
+    /* kuidas teha */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* jaluse vasak pool */
+footer ul {
+    width: fit-content;
+    /* float: left; */
+    padding-left: 0px;
+}
+
+footer ul li {
+    display: block;
+    padding: 0 0 10px 0;
+}
+
+footer ul li p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+footer ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* jaluse parem pool */
+.footer-sm {
+    width: 32px;
+    /* float: right; */
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* jaluse keskmine osa (nähtav ainult suurema ekraaniga) */
+.disclaimer {
+    display: none;
+}
+
+/* arvutiversioon */
 
 @media only screen and (min-width: 950px) {
-
+    
+/* jaluse keskmine osa (nähtav ainult suurema ekraaniga) */
 .disclaimer {
     display: block;
     font-family: "Open Sans", sans-serif;
@@ -187,9 +195,8 @@ hr {
     line-height: 24px;
     color: #ffffff;
     text-transform: uppercase;
-    float: left;
+    /* float: left; */
     margin: 0 80px;
-
 }
 
 .disclaimer span {
